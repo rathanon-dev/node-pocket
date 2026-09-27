@@ -97,7 +97,27 @@ if ($commitMsg -eq "") {
     $commitMsg = "snapshot: $commitMsg"
 }
 
-# 6. Execute atomic local micro-commit
+# 6. Zero-Leak Security Gate (Prevent secret leaks)
+$leakFound = $false
+$pendingFiles = git status --porcelain 2>$null
+if ($pendingFiles) {
+    foreach ($p in $pendingFiles) {
+        if ($p -match "\.env$" -or $p -match "\.env\." -or $p -match "id_rsa|id_ed25519") {
+            if ($p -notmatch "\.example") {
+                $leakFound = $true
+                break
+            }
+        }
+    }
+}
+
+if ($leakFound) {
+    Pop-Location
+    Write-Output "{}"
+    exit
+}
+
+# 7. Execute atomic local micro-commit
 git add -A *>&1 | Out-Null
 git commit -m "$commitMsg" -q *>&1 | Out-Null
 

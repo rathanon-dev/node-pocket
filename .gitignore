@@ -13,10 +13,14 @@ build/
 tests/profiles/**/data/
 tests/profiles/**/session.json
 
-# === Environment ===
+# === Environment & Secrets (MANDATORY ZERO-LEAK) ===
 .env
-.env.local
-.env.production
+.env.*
+!.env.example
+.agent/.env
+.agent/.env.*
+!.agent/env.example
+!.agent/.env.example
 
 # === OS & Editor ===
 .DS_Store
