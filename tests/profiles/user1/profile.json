@@ -1,0 +1,11 @@
+{
+  "role": "customer",
+  "ip": "192.168.1.50",
+  "targetUrl": "http://localhost:3000",
+  "viewport": {
+    "width": 1280,
+    "height": 720
+  },
+  "locale": "th-TH",
+  "notes": "Regular customer user for front-end user flow testing."
+}

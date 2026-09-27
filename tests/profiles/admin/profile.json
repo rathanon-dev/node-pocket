@@ -1,0 +1,11 @@
+{
+  "role": "admin",
+  "ip": "192.168.1.100",
+  "targetUrl": "http://localhost:3000",
+  "viewport": {
+    "width": 1920,
+    "height": 1080
+  },
+  "locale": "th-TH",
+  "notes": "Administrator account for backend management and dashboard testing."
+}

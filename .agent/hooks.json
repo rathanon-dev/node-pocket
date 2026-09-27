@@ -1,0 +1,11 @@
+{
+  "node-pocket-auto-git": {
+    "Stop": [
+      {
+        "type": "command",
+        "command": "powershell.exe -ExecutionPolicy Bypass -NoProfile -Command \"& { if (Test-Path '.\\scripts\\auto_git_snapshot.ps1') { & '.\\scripts\\auto_git_snapshot.ps1' } elseif (Test-Path '.\\.agent\\scripts\\auto_git_snapshot.ps1') { & '.\\.agent\\scripts\\auto_git_snapshot.ps1' } else { Write-Output '{}' } }\"",
+        "timeout": 30
+      }
+    ]
+  }
+}

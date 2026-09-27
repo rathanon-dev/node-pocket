@@ -1,0 +1,11 @@
+{
+  "role": "template",
+  "ip": "127.0.0.1",
+  "targetUrl": "http://localhost:3000",
+  "viewport": {
+    "width": 1280,
+    "height": 720
+  },
+  "locale": "th-TH",
+  "notes": "This is a template. Copy this folder and rename to create a new user profile."
+}

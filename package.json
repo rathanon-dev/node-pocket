@@ -1,0 +1,19 @@
+{
+  "name": "node-pocket",
+  "version": "0.0.1",
+  "private": true,
+  "description": "Sovereign Fullstack AI Generator — 1 Folder = 1 Complete Web App",
+  "scripts": {
+    "dev": "echo 'Run Fullstack Scaffolder skill first to generate your web app'",
+    "build": "echo 'Run Fullstack Scaffolder skill first'",
+    "start": "echo 'Run Fullstack Scaffolder skill first'",
+    "git:save": "git add -A && git commit -m \"manual: snapshot saved by developer\"",
+    "git:log": "git log --oneline -n 15",
+    "git:status": "git status"
+  },
+  "dependencies": {},
+  "devDependencies": {},
+  "engines": {
+    "node": ">=18.0.0"
+  }
+}

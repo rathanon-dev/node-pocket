@@ -1,0 +1,15 @@
+{
+  "compilerOptions": {
+    "lib": ["deno.ns", "dom"]
+  },
+  "tasks": {
+    "test": "deno test --allow-all",
+    "test:chrome": "deno test --allow-all -- --browser=chromium",
+    "test:firefox": "deno test --allow-all -- --browser=firefox",
+    "test:safari": "deno test --allow-all -- --browser=webkit",
+    "test:all": "deno test --allow-all -- --browser=all"
+  },
+  "imports": {
+    "@std/assert": "jsr:@std/assert@^1"
+  }
+}
