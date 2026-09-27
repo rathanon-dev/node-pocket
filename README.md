@@ -214,28 +214,6 @@ npm run git:status
 
 ---
 
-## 📤 การอัปโหลดขึ้น GitHub (Publish to GitHub)
-
-หากต้องการนำโปรเจกต์นี้ขึ้น GitHub Repository ของคุณ:
-
-1. **สร้าง Repository ใหม่บน GitHub:** ไปที่ [github.com/new](https://github.com/new) ตั้งชื่อ repository เช่น `node-pocket` (ไม่ต้องติ๊ก Add README)
-2. **ผูก Remote และ Push โค้ด:**
-   ```bash
-   # หากยังไม่มี .git ในโฟลเดอร์ ให้รัน git init ก่อน
-   git init
-   git add -A
-   git commit -m "feat: initial commit for node-pocket sovereign generator"
-
-   # ผูก Remote ไปยัง GitHub ของคุณ (รองรับทั้ง SSH และ HTTPS)
-   git remote add origin git@github.com:rathanon-dev/node-pocket.git
-
-   # Push โค้ดขึ้นสู่ GitHub
-   git branch -M master
-   git push -u origin master
-   ```
-
----
-
 ## 📄 ลิขสิทธิ์และผู้พัฒนา (License & Author)
 
 - **ผู้พัฒนา (Developer):** [rathanon-dev](https://github.com/rathanon-dev)

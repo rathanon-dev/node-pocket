@@ -213,28 +213,6 @@ The `tests/profiles/<username>/` directory isolates browser data per user role:
 
 ---
 
-## 📤 Publishing to GitHub
-
-To push this repository to GitHub:
-
-1. **Create a new repository on GitHub:** Visit [github.com/new](https://github.com/new) and name it `node-pocket` (leave "Add README" unchecked).
-2. **Link the remote and push:**
-   ```bash
-   # Initialize git if not already present
-   git init
-   git add -A
-   git commit -m "feat: initial commit for node-pocket sovereign generator"
-
-   # Add remote origin (SSH or HTTPS)
-   git remote add origin git@github.com:rathanon-dev/node-pocket.git
-
-   # Push code to GitHub
-   git branch -M master
-   git push -u origin master
-   ```
-
----
-
 ## 📄 License & Author
 
 - **Developer:** [rathanon-dev](https://github.com/rathanon-dev)
